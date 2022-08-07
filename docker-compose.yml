@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  producer:
+    build: producer
+    depends_on:
+      - redis
+  consumer:
+    build: consumer
+    depends_on:
+      - redis
+  redis:
+    image: "redis:alpine"
