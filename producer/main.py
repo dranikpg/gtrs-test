@@ -1,4 +1,3 @@
-from turtle import st
 import redis
 import time
 import random
